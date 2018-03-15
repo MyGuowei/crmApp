@@ -1,0 +1,289 @@
+/* -- 样式说明 -- 
+* g - 全局 
+* t - 区域 
+* m - 模板 
+* ui - 界面 
+* lb - 标签 
+* 特殊标签 
+* j - 脚本 
+* fix - 浮窗 
+*/
+
+
+/*base style*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+menu,
+nav,
+section,
+time,
+mark,
+audio,
+video,
+details,
+summary {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "\5FAE\8F6F\96C5\9ED1", "Microsoft Yahei", "Arial";
+	color: #333;
+	background-color: #fff;
+	font-size: 15px;
+	background-image: url(about:blank);
+	background-attachment: fixed;
+	overflow-x: hidden;
+}
+
+a {
+	color: #06f;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #f60;
+	text-decoration: none;
+}
+
+img {
+	border: none;
+	vertical-align: middle;
+	max-width: 100%;
+}
+
+i,
+em {
+	font-style: normal;
+}
+
+li {
+	list-style-type: none;
+}
+
+textarea {
+	resize: vertical;
+}
+
+input,
+select,
+textarea {
+	font-family: "\5FAE\8F6F\96C5\9ED1", "Microsoft Yahei", "Arial";
+	background-color: #fff;
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+
+/*global style*/
+
+
+/*公共样式--开始*/
+
+table {
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+
+input,
+textarea {
+	outline: none;
+	border: none;
+}
+
+textarea {
+	resize: none;
+	overflow: auto;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+.clearfix:after {
+	content: ".";
+	width: 0;
+	height: 0;
+	visibility: hidden;
+	display: block;
+	clear: both;
+	overflow: hidden;
+}
+
+.fl {
+	float: left
+}
+
+.fr {
+	float: right
+}
+
+.tl {
+	text-align: left;
+}
+
+.tc {
+	text-align: center
+}
+
+.tr {
+	text-align: right;
+}
+
+.ellipse {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.inline {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+
+.color{
+	color: #fcc91a;
+}
+.background{
+	background: #fcc91a;
+}
+/*header*/
+
+.main-header {
+	background: #FFD900;
+	position: fixed;
+	width: 100%;
+	height: 0.51rem;
+	top: 0px;
+	left: 0px;
+	z-index: 999;
+}
+
+.main-header .mh-back {
+	width: 0.28rem;
+	height: 0.51rem;
+	line-height: 0.51rem;
+	position: absolute;
+	left: 1%;
+	top: 0;
+}
+
+.main-header .mh-home {
+	width: 0.35rem;
+	height: 0.51rem;
+	line-height: 0.51rem;
+	position: absolute;
+	left: 16%;
+	top: 0;
+}
+.main-header .mh-home img{
+	width: 0.35rem;
+}
+.main-header .mh-refresh {
+	width: 0.28rem;
+	height: 0.51rem;
+	line-height: 0.51rem;
+	position: absolute;
+	left: 30%;
+	top: 0;
+}
+
+.main-header .mh-logo {
+	width: 8rem;
+	height: 0.51rem;
+	line-height: 0.51rem;
+	position: absolute;
+	left: 40%;
+	top: 0;
+}
+.main-header .mh-logo>img{
+	width: 26%;
+	vertical-align: middle;
+}
+
+.main-header .mh-landData{
+	font-size: 0.5rem;
+    position: absolute;
+    top: 20%;
+    right: 5px;
+    text-align: center;
+    font-size: 0.25rem;
+}
+.passCity{
+    color: rgb(255, 255, 255);
+    background: #3C3838;
+    border-radius: 1rem 0px 0px 1rem;
+    padding: 1px 0.1rem;
+    font-family: "Microsoft YaHei";
+    line-height: 0.3rem;
+    float: left;
+}
+.cancellation{
+	border: 0px;
+    background: #EE534E;
+    border-radius: 0px 1rem 1rem 0px;
+    color: #fff;
+    padding: 1px 0.1rem;
+    cursor: pointer;
+    font-family: "Microsoft YaHei";
+    line-height: 0.3rem;
+    float: left;
+}
